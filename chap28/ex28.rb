@@ -1,0 +1,23 @@
+answers = []
+answers << (true && true)
+answers << (false && true)
+answers << (1 == 1 && 2 == 1)
+answers << ("test" == "test")
+answers << (1 == 1 || 2 != 1)
+answers << (true && 1 == 1)
+answers << (false && 0 != 0)
+answers << (true || 1 == 1)
+answers << ("test" == "testing")
+answers << (1 != 0 && 2 == 1)
+answers << ("test" != "testing")
+answers << ("test" == 1)
+answers << (!(true && false))
+answers << (!(1 == 1 && 0 != 1))
+answers << (!(10 == 1 || 1000 == 1000))
+answers << (!(1 != 10 || 3 == 4))
+answers << (!("testing" == "testing" && "Zed" == "Cool Guy"))
+answers << (1 == 1 && (!("testing" == 1 || 1 == 0)))
+answers << ("chunky" == "bacon" && (!(3 == 4 || 3 == 3)))
+answers << (3 == 3 && (!("testing" == "testing" || "Ruby" == "Fun")))
+
+answers.each_with_index{|x, i| puts "#{i + 1}. #{x}"}
